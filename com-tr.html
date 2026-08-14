@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResumeNest T&uuml;rkiye | Executive Resume Gateway &mdash; Official Secondary Domain</title>
+<meta name="description" content="Official ResumeNest gateway for executive and corporate resumes. 1,689+ ATS-ready templates, real-time editing and instant vector PDF export run exclusively on www.resumenest.com.">
+<meta name="theme-color" content="#f5f7fb">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.resumenest.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ResumeNest T&uuml;rkiye | Executive Resume Gateway">
+<meta property="og:description" content="Executive-grade, ATS-compliant resumes. All tools run on the central ResumeNest platform.">
+<meta property="og:url" content="https://www.resumenest.com/">
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='15'%20fill='%230a101c'/%3E%3Cpath%20d='M23%2047V17h11a9%209%200%200%201%200%2018h-4l9%2012'%20fill='none'%20stroke='%236b4bf5'%20stroke-width='4.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='46'%20cy='20'%20r='4'%20fill='%2300a99b'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   RESUMENEST.COM.TR — EXECUTIVE GATEWAY (v2)
+   Palette: resumenest.info tokens — paper / ink / teal / violet
+   Motion: one rAF engine (progress, velocity, depth, scrub)
+   ============================================================ */
+:root{
+  --paper:#f5f7fb; --paper2:#eaeef6; --card:#ffffff;
+  --ink:#0a101c; --ink2:#1b2536; --ink3:#101a2d;
+  --grey:#5d6b83; --grey2:#8894a8;
+  --teal:#00a99b; --teal-d:#00776d; --teal-l:#d7f4f0;
+  --violet:#6b4bf5; --violet-d:#4a2fd0; --violet-l:#ece7ff;
+  --amber:#e8871e; --red:#e05252;
+  --hair:#dfe5ef; --hair2:#cfd7e6;
+  --sans:"Inter","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --mono:"SFMono-Regular","JetBrains Mono","IBM Plex Mono",Consolas,Menlo,monospace;
+  --serif:"Didot","Bodoni MT","Playfair Display","Hoefler Text",Garamond,Georgia,serif;
+  --max:1220px; --sy:0; --vel:0deg;
+  --e:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.66;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+svg{display:block}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 26px}
+
+/* ============ ATMOSPHERE ============ */
+.field{position:fixed;inset:0;z-index:-5;background:
+  radial-gradient(1100px 660px at calc(86% - var(--sy) * 24%) calc(-8% + var(--sy) * 26%), rgba(107,75,245,.17), transparent 62%),
+  radial-gradient(940px 580px at calc(6% + var(--sy) * 22%) calc(24% + var(--sy) * 36%), rgba(0,169,155,.17), transparent 62%),
+  radial-gradient(900px 620px at 50% calc(116% - var(--sy) * 24%), rgba(107,75,245,.12), transparent 62%),
+  linear-gradient(180deg,#f8fafd,#eef2f9 56%,#f7f9fc)}
+.mesh{position:fixed;inset:-12%;z-index:-4;pointer-events:none;
+  background-image:linear-gradient(rgba(10,16,28,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(10,16,28,.05) 1px,transparent 1px);
+  background-size:64px 64px;transform:translate3d(0,calc(var(--sy) * -80px),0);
+  -webkit-mask-image:radial-gradient(circle at 54% calc(16% + var(--sy) * 46%),#000,transparent 72%);
+  mask-image:radial-gradient(circle at 54% calc(16% + var(--sy) * 46%),#000,transparent 72%)}
+.prism{position:fixed;left:-25vw;top:calc(-14vh + var(--sy) * 46vh);width:150vw;height:58vh;z-index:-4;pointer-events:none;opacity:.55;filter:blur(40px);
+  transform:rotate(-8deg);
+  background:linear-gradient(101deg,transparent 26%,rgba(0,169,155,.24) 42%,rgba(107,75,245,.24) 58%,transparent 74%)}
+.grain{position:fixed;inset:0;z-index:-3;pointer-events:none;opacity:.1;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='140'%20height='140'%3E%3Cfilter%20id='n'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='.9'%20numOctaves='3'/%3E%3C/filter%3E%3Crect%20width='140'%20height='140'%20filter='url(%23n)'/%3E%3C/svg%3E")}
+#beam{position:fixed;top:0;left:0;height:3px;width:0;z-index:130;background:linear-gradient(90deg,var(--teal),var(--violet));box-shadow:0 0 16px rgba(107,75,245,.45)}
+
+/* ============ SECTION RAIL ============ */
+#rail{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;gap:14px}
+#rail a{display:flex;align-items:center;justify-content:flex-end;gap:9px;font:600 9.4px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--grey2);transition:.4s var(--e)}
+#rail a i{display:block;width:14px;height:2px;border-radius:2px;background:var(--hair2);transition:.4s var(--e)}
+#rail a:hover{color:var(--ink)}
+#rail a.on{color:var(--violet)}
+#rail a.on i{width:32px;background:linear-gradient(90deg,var(--teal),var(--violet))}
+
+/* ============ GATEWAY STRIP ============ */
+.strip{position:relative;z-index:70;background:var(--ink);color:#dce4f2}
+.strip .wrap{display:flex;align-items:center;gap:14px;padding:10px 26px;font:500 12.6px var(--mono)}
+.strip .tag{flex:none;font:700 10px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:#04211f;background:linear-gradient(90deg,#4fe3d2,var(--teal));padding:5px 10px;border-radius:4px}
+.strip b{color:#7ff0e2;font-weight:600}
+.strip .go{margin-left:auto;flex:none;color:#b9a8ff;font-size:12.2px;border-bottom:1px solid rgba(185,168,255,.4)}
+.strip .go:hover{color:#fff;border-color:#fff}
+
+/* ============ HEADER ============ */
+header{position:sticky;top:0;z-index:60}
+.bar{display:flex;align-items:center;gap:28px;padding:17px 26px;border-bottom:1px solid transparent;transition:.45s var(--e)}
+header.tight .bar{padding:10px 26px;background:rgba(247,249,252,.86);border-color:var(--hair);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%)}
+.logo{display:flex;align-items:center;gap:12px;flex:none}
+.crest{position:relative;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;overflow:hidden;background:var(--ink);color:#fff;font:400 20px/1 var(--serif)}
+.crest::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(79,227,210,.6),transparent);transform:translateX(-100%);animation:pass 4.6s var(--e) infinite}
+@keyframes pass{55%,100%{transform:translateX(100%)}}
+.word{font:700 17px/1 var(--sans);letter-spacing:-.02em;color:var(--ink)}
+.word i{font-style:normal;color:var(--violet)}
+.word small{display:block;font:600 8.4px var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--grey2);margin-top:5px}
+nav.main{margin-left:auto;display:flex;align-items:center;gap:25px}
+.nl{font:500 14px var(--sans);color:var(--ink2);position:relative;padding:6px 0}
+.nl::after{content:"";position:absolute;left:0;bottom:1px;height:2px;width:0;border-radius:2px;background:linear-gradient(90deg,var(--teal),var(--violet));transition:width .4s var(--e)}
+.nl:hover::after{width:100%}
+.burger{display:none;width:42px;height:36px;border:1px solid var(--hair2);border-radius:10px;margin-left:auto;padding:0 10px;background:#fff}
+.burger i{display:block;height:1.6px;background:var(--ink);margin:4.2px 0}
+.drawer{display:none}
+
+/* ============ BUTTONS ============ */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13.5px 23px;border-radius:11px;overflow:hidden;
+  font:600 14.2px var(--sans);border:1px solid transparent;white-space:nowrap;
+  transition:transform .45s var(--e),box-shadow .45s,background .3s,border-color .3s,color .3s}
+.btn.vio{color:#fff;background:linear-gradient(100deg,#8f7bff,var(--violet) 58%,#5636e0);box-shadow:0 14px 30px -14px rgba(107,75,245,.7)}
+.btn.vio:hover{transform:translateY(-3px);box-shadow:0 24px 46px -16px rgba(107,75,245,.75)}
+.btn.vio::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:42%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg)}
+.btn.vio:hover::after{animation:sheen .85s var(--e) forwards}
+@keyframes sheen{to{left:130%}}
+.btn.ink{color:#fff;background:linear-gradient(100deg,var(--ink),#25314a)}
+.btn.ink::before{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--violet));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--e)}
+.btn.ink:hover{transform:translateY(-3px)}
+.btn.ink:hover::before{transform:scaleX(1)}
+.btn.out{background:#fff;border-color:var(--hair2);color:var(--ink)}
+.btn.out:hover{transform:translateY(-3px);border-color:var(--violet);color:var(--violet);box-shadow:0 16px 34px -20px rgba(107,75,245,.6)}
+.btn.onink{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#eaf0fa}
+.btn.onink:hover{transform:translateY(-3px);border-color:#4fe3d2;color:#fff}
+.btn.sm{padding:10px 16px;font-size:13px;border-radius:9px}
+.btn .ar{transition:transform .35s var(--e)}
+.btn:hover .ar{transform:translateX(4px)}
+
+/* ============ IMAGE SYSTEM (duotone, multiply) ============ */
+.shot{position:relative;overflow:hidden;background:linear-gradient(150deg,#0e2a2f,#0a101c 66%),radial-gradient(circle at 26% 18%,rgba(0,169,155,.5),transparent 62%)}
+.shot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08);mix-blend-mode:multiply;opacity:.92;transition:transform 1.4s var(--e)}
+.shot>img.dead{display:none}
+.shot::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(200deg,rgba(0,169,155,.32),transparent 46%,rgba(107,75,245,.34)),linear-gradient(180deg,transparent,rgba(10,16,28,.55))}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:20px}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding:72px 0 56px}
+.hero .split{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border-radius:8px;border:1px solid rgba(107,75,245,.22);background:var(--violet-l);
+  color:var(--violet-d);font:600 10.6px var(--mono);letter-spacing:.2em;text-transform:uppercase}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--violet);animation:ping 2.6s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(107,75,245,.45)}70%{box-shadow:0 0 0 11px rgba(107,75,245,0)}100%{box-shadow:0 0 0 0 rgba(107,75,245,0)}}
+h1{font:700 clamp(36px,5vw,64px)/1.04 var(--sans);letter-spacing:-.038em;margin:22px 0 18px;max-width:19ch}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.1em;margin-bottom:-.1em}
+h1 .w>i{display:inline-block;font-style:normal;transform:translateY(118%);transition:transform 1.05s var(--e)}
+h1.in .w>i{transform:none}
+h1 .w:nth-child(1)>i{transition-delay:.04s}h1 .w:nth-child(2)>i{transition-delay:.1s}
+h1 .w:nth-child(3)>i{transition-delay:.16s}h1 .w:nth-child(4)>i{transition-delay:.22s}
+h1 .w:nth-child(5)>i{transition-delay:.28s}h1 .w:nth-child(6)>i{transition-delay:.34s}
+h1 .w:nth-child(7)>i{transition-delay:.4s}h1 .w:nth-child(8)>i{transition-delay:.46s}
+h1 .w:nth-child(9)>i{transition-delay:.52s}
+h1 .gd>i{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;
+  background:linear-gradient(100deg,var(--teal-d),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rule{width:80px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--teal),var(--violet));margin:0 0 20px}
+.lede{font-size:17.2px;color:var(--grey);max-width:56ch;margin:0}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 24px}
+.trust{display:flex;flex-wrap:wrap;gap:9px}
+.trust b{display:inline-flex;align-items:center;gap:7px;font:600 10.4px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);
+  background:#fff;border:1px solid var(--hair);padding:7px 11px;border-radius:7px}
+.trust svg{width:13px;height:13px;color:var(--teal-d);flex:none}
+
+/* ============ HOLO DOSSIER ============ */
+.stage{position:relative;perspective:1500px}
+.holo{position:relative;transform-style:preserve-3d;border-radius:24px;padding:20px;
+  background:linear-gradient(160deg,rgba(255,255,255,.96),rgba(255,255,255,.66));
+  border:1px solid var(--hair);box-shadow:0 54px 96px -50px rgba(10,16,28,.5);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);transition:transform .4s var(--e)}
+.holo::before{content:"";position:absolute;inset:-1px;border-radius:25px;padding:1px;pointer-events:none;opacity:.6;
+  background:linear-gradient(150deg,rgba(0,169,155,.55),rgba(107,75,245,.5));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.hbar{display:flex;align-items:center;gap:10px;padding:0 4px 14px;border-bottom:1px solid var(--hair)}
+.hbar p{margin:0;font:600 9.8px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--grey2)}
+.lamps{display:flex;gap:5px;margin-left:auto}
+.lamps i{width:8px;height:8px;border-radius:50%;background:var(--hair2)}
+.lamps i:first-child{background:var(--teal)}
+.lamps i:nth-child(2){background:var(--violet)}
+.sheet{margin-top:16px;border-radius:14px;background:#fff;border:1px solid var(--hair);padding:22px 20px;box-shadow:0 20px 44px -28px rgba(10,16,28,.4)}
+.sheet h4{margin:0;font:400 22px var(--serif);letter-spacing:.01em}
+.sheet .role{font:600 9.6px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--teal-d);margin:6px 0 14px}
+.sheet hr{border:0;border-top:1px dashed var(--hair);margin:14px 0}
+.ln{height:6px;border-radius:4px;background:var(--paper2);margin:8px 0;transform:scaleX(0);transform-origin:left;transition:transform 1s var(--e)}
+.holo.lit .ln{transform:scaleX(1)}
+.ln.t{background:rgba(0,169,155,.4)}
+.ln.v{background:rgba(107,75,245,.3)}
+.ln.w9{width:92%}.ln.w8{width:84%}.ln.w7{width:72%}.ln.w5{width:54%}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.mini{font:600 8.8px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--grey2);margin-bottom:8px}
+.chipset{display:flex;flex-wrap:wrap;gap:5px}
+.chipset b{font:600 8.8px var(--mono);letter-spacing:.05em;padding:4px 7px;border-radius:5px;color:var(--ink2);
+  background:var(--violet-l);border:1px solid rgba(107,75,245,.18);opacity:0;transform:translateY(6px)}
+.holo.lit .chipset b{animation:pop .55s var(--e) forwards}
+.chipset b:nth-child(1){animation-delay:.9s}.chipset b:nth-child(2){animation-delay:1s}
+.chipset b:nth-child(3){animation-delay:1.1s}.chipset b:nth-child(4){animation-delay:1.2s}
+.chipset b:nth-child(5){animation-delay:1.3s}
+@keyframes pop{to{opacity:1;transform:none}}
+.seal{position:absolute;right:-14px;top:-14px;width:94px;height:94px;border-radius:50%;display:grid;place-items:center;text-align:center;
+  background:#fff;border:1px solid var(--hair);box-shadow:0 18px 40px -20px rgba(10,16,28,.45);
+  transform:rotate(calc(var(--sy) * 120deg))}
+.seal span{position:relative;z-index:2;font:700 8px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);line-height:1.6;
+  transform:rotate(calc(var(--sy) * -120deg))}
+.seal::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1px dashed rgba(107,75,245,.45);animation:spin 20s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cap-f{position:absolute;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;
+  font:600 11.4px var(--mono);letter-spacing:.04em;color:var(--ink2);background:rgba(255,255,255,.95);
+  border:1px solid var(--hair);box-shadow:0 22px 44px -26px rgba(10,16,28,.55)}
+.cap-f b{color:var(--violet)}
+.cap-f.c1{left:-26px;top:21%;animation:bobA 7s ease-in-out infinite}
+.cap-f.c2{right:-20px;bottom:13%;animation:bobB 8.4s ease-in-out infinite}
+@keyframes bobA{50%{transform:translateY(-12px)}}
+@keyframes bobB{50%{transform:translateY(11px)}}
+
+/* ============ TICKER ============ */
+.ticker{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:#fff;overflow:hidden;padding:14px 0;
+  transform:skewY(var(--vel));transition:transform .35s ease-out;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.tape{display:flex;gap:38px;white-space:nowrap;width:max-content;animation:slide 36s linear infinite;
+  font:600 11px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--grey2)}
+.tape b{color:var(--violet)}
+.tape em{font-style:normal;color:var(--teal-d)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ============ SECTION BASE ============ */
+section{position:relative}
+.sec{padding:98px 0}
+.kick{font:600 10.6px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--violet)}
+h2{font:700 clamp(27px,3.6vw,45px)/1.12 var(--sans);letter-spacing:-.034em;margin:14px 0 15px}
+h2 em{font-style:italic;font-family:var(--serif);font-weight:400;background:linear-gradient(100deg,var(--teal-d),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--grey);font-size:16.4px;max-width:64ch;margin:0}
+.head{max-width:790px}
+
+/* ============ METRIC SLAB ============ */
+.slab{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--hair);border-radius:18px;overflow:hidden;
+  box-shadow:0 30px 62px -48px rgba(10,16,28,.55)}
+.mtr{position:relative;padding:28px 24px;border-right:1px solid var(--hair);overflow:hidden}
+.mtr:last-child{border-right:0}
+.mtr .ix{font:600 9.6px var(--mono);letter-spacing:.2em;color:var(--grey2)}
+.mtr b{display:block;margin-top:13px;font:700 clamp(27px,3.2vw,40px)/1 var(--sans);letter-spacing:-.045em}
+.mtr span{display:block;margin-top:8px;font:600 10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--grey2)}
+.mtr::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--teal),var(--violet));transition:width 1.3s var(--e)}
+.mtr.in::after{width:100%}
+
+/* ============ INK DISCLOSURE SLAB ============ */
+.disc{position:relative;border-radius:22px;overflow:hidden;padding:44px 42px 38px;color:#dbe3f1;
+  background:linear-gradient(150deg,#101a2d,#0a101c 64%);border:1px solid #1b2740}
+.disc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--teal),var(--violet))}
+.disc::after{content:"";position:absolute;right:-100px;top:-100px;width:340px;height:340px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(107,75,245,.36),transparent 66%)}
+.disc .kick{color:#4fe3d2}
+.disc h3{position:relative;margin:14px 0;font:400 clamp(22px,2.4vw,31px)/1.2 var(--serif);color:#fff}
+.disc p{position:relative;margin:0 0 14px;color:#b9c6dc;font-size:16.2px;max-width:82ch}
+.disc .quote{font-style:italic;color:#eaf0fa;border-left:2px solid var(--teal);padding:10px 0 10px 18px}
+.disc a.link{color:#b9a8ff;font-weight:600;border-bottom:1px solid rgba(185,168,255,.4)}
+.disc .btn{position:relative}
+
+/* ============ STICKY STANDARDS DECK ============ */
+.deck{height:360vh;position:relative}
+.deckStage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.deckHead{display:flex;align-items:flex-end;gap:26px;padding:0 6vw 22px}
+.deckHead h2{margin:0;max-width:18ch}
+.deckHead .ro{margin-left:auto;text-align:right;font:600 9.6px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--grey2)}
+.deckHead .ro b{display:block;font:400 30px var(--serif);color:var(--ink);letter-spacing:0}
+.deckBody{display:grid;grid-template-columns:.42fr .58fr;gap:24px;margin:0 6vw}
+.stepper{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.stepper li{display:flex;gap:14px;padding:15px 17px;border-radius:14px;border:1px solid transparent;background:rgba(255,255,255,.55);transition:.5s var(--e)}
+.stepper li .n{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  font:600 11px var(--mono);color:var(--grey2);background:#fff;border:1px solid var(--hair);transition:.5s var(--e)}
+.stepper li h4{margin:0;font:600 15.2px var(--sans);letter-spacing:-.02em;color:var(--ink2)}
+.stepper li p{margin:3px 0 0;font:500 11.6px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--grey2)}
+.stepper li.done .n{color:var(--teal-d);background:var(--teal-l);border-color:rgba(0,169,155,.3)}
+.stepper li.on{background:#fff;border-color:var(--hair2);box-shadow:0 24px 48px -36px rgba(10,16,28,.6)}
+.stepper li.on .n{color:#fff;background:linear-gradient(140deg,var(--teal),var(--violet));border-color:transparent}
+.vp{position:relative;min-height:min(56svh,460px);border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--hair);
+  box-shadow:0 34px 72px -48px rgba(10,16,28,.6)}
+.plate{position:absolute;inset:0;padding:30px 28px;display:flex;flex-direction:column;gap:13px;opacity:0;transform:translateY(20px) scale(.995);
+  transition:opacity .7s var(--e),transform .7s var(--e);pointer-events:none}
+.plate.on{opacity:1;transform:none;pointer-events:auto}
+.plate .pi{font:600 9.6px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--violet)}
+.plate h3{margin:0;font:700 clamp(20px,2.1vw,27px) var(--sans);letter-spacing:-.03em}
+.plate p{margin:0;color:var(--grey);font-size:15.2px;max-width:52ch}
+.vis{margin-top:auto;border-radius:14px;border:1px solid var(--hair);background:var(--paper);padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.vrow{display:grid;grid-template-columns:120px 1fr 38px;gap:12px;align-items:center}
+.vrow span{font:600 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.vrow em{font:600 10px var(--mono);font-style:normal;color:var(--grey2);text-align:right}
+.tr{height:7px;border-radius:5px;background:var(--paper2);overflow:hidden}
+.tr i{display:block;height:100%;width:0;border-radius:5px;background:linear-gradient(90deg,var(--teal),var(--violet));transition:width 1s var(--e)}
+.plate.on .tr i{width:var(--w,0%)}
+.vstats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.vstats div{background:#fff;border:1px solid var(--hair);border-radius:10px;padding:11px 12px}
+.vstats b{display:block;font:700 19px var(--sans);letter-spacing:-.035em;color:var(--ink)}
+.vstats span{display:block;margin-top:3px;font:600 8.8px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--grey2)}
+.vdual{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.vdual div{background:#fff;border:1px solid var(--hair);border-radius:10px;padding:12px}
+.vdual .lb{font:600 8.8px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--teal-d);margin-bottom:8px}
+.blk{height:6px;border-radius:3px;background:var(--paper2);margin-bottom:6px}
+.blk.t{background:rgba(0,169,155,.35)}
+.blk.v{background:rgba(107,75,245,.28)}
+.vspine{display:grid;gap:9px}
+.vspine .sn{display:flex;align-items:center;gap:10px;font:600 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.vspine .sn i{flex:none;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--teal-l);border:1px solid rgba(0,169,155,.3)}
+.vspine .sn svg{width:11px;height:11px;color:var(--teal-d)}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags b{font:600 9.4px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);background:var(--teal-l);
+  border:1px solid rgba(0,169,155,.24);padding:5px 9px;border-radius:999px}
+.deckBar{margin:22px 6vw 0;height:2px;background:var(--hair);border-radius:2px;overflow:hidden}
+.deckBar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--violet))}
+
+/* ============ BENTO ADVANTAGE ============ */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:46px}
+.bx{position:relative;grid-column:span 2;background:#fff;border:1px solid var(--hair);border-radius:18px;padding:26px 24px 22px;overflow:hidden;
+  transition:transform .5s var(--e),box-shadow .5s,border-color .5s}
+.bx.w3{grid-column:span 3}
+.bx.w6{grid-column:span 6;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.bx::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:linear-gradient(90deg,var(--teal),var(--violet));transition:width .6s var(--e)}
+.bx::after{content:"";position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .5s;
+  background:radial-gradient(420px 220px at var(--mx,50%) var(--my,0%),rgba(107,75,245,.1),transparent 62%)}
+.bx:hover{transform:translateY(-7px);border-color:var(--hair2);box-shadow:0 34px 68px -42px rgba(10,16,28,.55)}
+.bx:hover::before{width:100%}
+.bx:hover::after{opacity:1}
+.bx .top{position:relative;display:flex;align-items:center;gap:10px}
+.bx .ixn{font:600 9.6px var(--mono);letter-spacing:.2em;color:var(--grey2)}
+.bx .st{margin-left:auto;font:600 8.8px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--violet);
+  background:var(--violet-l);border:1px solid rgba(107,75,245,.18);padding:4px 8px;border-radius:999px}
+.bx .ic{position:relative;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;margin:18px 0 15px;
+  color:var(--teal-d);background:var(--teal-l);border:1px solid rgba(0,169,155,.24);transition:transform .5s var(--e)}
+.bx:nth-child(even) .ic{color:var(--violet);background:var(--violet-l);border-color:rgba(107,75,245,.2)}
+.bx:hover .ic{transform:translateY(-3px) rotate(-4deg)}
+.bx .ic svg{width:21px;height:21px}
+.bx h3{position:relative;margin:0 0 9px;font:700 17.4px var(--sans);letter-spacing:-.026em}
+.bx p{position:relative;margin:0;color:var(--grey);font-size:14.8px;line-height:1.68}
+.bx .rl{position:relative;display:flex;flex-wrap:wrap;gap:7px 16px;margin-top:17px;padding-top:13px;border-top:1px dashed var(--hair);
+  font:600 9.2px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--grey2)}
+.bx .rl b{color:var(--ink2)}
+.pair{position:relative;height:172px}
+.pair i{position:absolute;border-radius:10px;background:#fff;border:1px solid var(--hair);box-shadow:0 20px 40px -26px rgba(10,16,28,.5)}
+.pair i:nth-child(1){left:0;top:10px;width:56%;height:150px;transform:rotate(-3deg)}
+.pair i:nth-child(2){right:0;top:0;width:56%;height:160px;transform:rotate(3deg)}
+.pair i::after{content:"";position:absolute;left:14px;right:14px;top:16px;height:6px;border-radius:3px;background:rgba(0,169,155,.4);
+  box-shadow:0 14px 0 var(--paper2),0 26px 0 var(--paper2),0 38px 0 var(--paper2),0 50px 0 var(--paper2)}
+
+/* ============ SCROLL-DRAWN TIMELINE ============ */
+.flow{display:grid;grid-template-columns:1.02fr .98fr;gap:46px;margin-top:44px;align-items:start}
+.tl{position:relative;padding-left:58px}
+.tlsvg{position:absolute;left:20px;top:10px;height:calc(100% - 20px);width:4px}
+.node{position:relative;background:#fff;border:1px solid var(--hair);border-radius:16px;padding:22px 24px;margin-bottom:16px;transition:.5s var(--e)}
+.node .rn{position:absolute;left:-58px;top:18px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  font:400 16px var(--serif);color:var(--grey2);background:#fff;border:1px solid var(--hair);transition:.5s var(--e)}
+.node.on{border-color:var(--hair2);box-shadow:0 26px 56px -42px rgba(10,16,28,.6);transform:translateX(4px)}
+.node.on .rn{color:#fff;background:linear-gradient(140deg,var(--teal),var(--violet));border-color:transparent;box-shadow:0 0 0 6px rgba(107,75,245,.07)}
+.node h3{margin:0 0 7px;font:700 17px var(--sans);letter-spacing:-.024em}
+.node p{margin:0;color:var(--grey);font-size:14.8px}
+.node .mt{margin-top:11px;font:600 9.2px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--teal-d)}
+.flowShot{height:min(60vh,520px);border-radius:20px;position:sticky;top:104px}
+
+/* ============ FORMAT CARDS ============ */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.fmt{display:flex;flex-direction:column;background:#fff;border:1px solid var(--hair);border-radius:16px;overflow:hidden;
+  transition:transform .5s var(--e),box-shadow .5s,border-color .5s}
+.fmt:hover{transform:translateY(-8px);border-color:var(--hair2);box-shadow:0 32px 62px -38px rgba(10,16,28,.55)}
+.paper{position:relative;height:182px;padding:18px;background:var(--paper);border-bottom:1px solid var(--hair);overflow:hidden}
+.paper .bh{height:9px;width:56%;border-radius:3px;background:var(--ink2)}
+.paper .bs{height:5px;width:34%;border-radius:3px;background:var(--teal);margin-top:7px}
+.paper .l{height:4.6px;border-radius:3px;background:#dbe2ee;margin-bottom:6px}
+.paper .col{display:grid;grid-template-columns:34% 1fr;gap:10px;margin-top:14px}
+.paper .sb{position:absolute;left:0;top:0;bottom:0;width:7px;background:linear-gradient(180deg,var(--teal),var(--violet))}
+.paper .scan{position:absolute;left:0;right:0;top:-40px;height:34px;background:linear-gradient(180deg,transparent,rgba(107,75,245,.22),transparent)}
+.fmt:hover .paper .scan{animation:scan 1.25s var(--e) forwards}
+@keyframes scan{to{top:200px}}
+.spec{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--hair);background:#fff}
+.spec div{padding:10px 8px;border-right:1px solid var(--hair);text-align:center}
+.spec div:last-child{border-right:0}
+.spec b{display:block;font:600 8.4px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--grey2)}
+.spec span{display:block;margin-top:4px;font:600 11.2px var(--mono);color:var(--ink2)}
+.fb{padding:18px;display:flex;flex-direction:column;gap:11px;flex:1}
+.pill{align-self:flex-start;font:600 9.2px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--violet);
+  background:var(--violet-l);border:1px solid rgba(107,75,245,.2);padding:5px 8px;border-radius:6px}
+.fb h3{margin:0;font:700 15.6px var(--sans);letter-spacing:-.022em}
+.fb p{margin:0;font-size:13.6px;color:var(--grey);flex:1}
+.fb .btn{width:100%}
+
+/* ============ FAQ LEDGER ============ */
+.led{margin-top:42px;border-top:1px solid var(--hair2)}
+.qrow{border-bottom:1px solid var(--hair2)}
+.qh{width:100%;display:flex;align-items:flex-start;gap:16px;padding:22px 4px;text-align:left;font:500 17px var(--serif);color:var(--ink);transition:color .3s}
+.qh .n{flex:none;padding-top:5px;font:600 10.4px var(--mono);letter-spacing:.14em;color:var(--violet)}
+.qh:hover{color:var(--violet)}
+.qh .pm{margin-left:auto;flex:none;position:relative;width:18px;height:18px;margin-top:4px}
+.qh .pm::before,.qh .pm::after{content:"";position:absolute;inset:8px 0 auto;height:2px;border-radius:2px;background:var(--teal-d);transition:transform .4s var(--e)}
+.qh .pm::after{transform:rotate(90deg)}
+.qrow.open .qh .pm::after{transform:rotate(0)}
+.ans{overflow:hidden;max-height:0;transition:max-height .5s var(--e)}
+.ans p{margin:0 0 22px;padding:0 46px 0 40px;color:var(--grey);font-size:15.4px}
+
+/* ============ CTA ============ */
+.cta{position:relative;border-radius:24px;overflow:hidden;text-align:center;background:var(--ink);color:#fff;border:1px solid #16203a}
+.cta .shot{position:absolute;inset:0;opacity:.5}
+.cta .aur{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(720px 330px at 50% -10%,rgba(107,75,245,.42),transparent 66%),radial-gradient(620px 300px at 10% 110%,rgba(0,169,155,.32),transparent 66%)}
+.cta .inner{position:relative;z-index:3;padding:76px 38px}
+.cta .kick{color:#4fe3d2}
+.cta h2{margin:0 auto 15px;max-width:20ch;color:#fff}
+.cta p{margin:0 auto 28px;max-width:60ch;color:#c2cee2}
+.cta .acts{justify-content:center;margin:0}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:#aab8ce;margin-top:26px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding:62px 0 36px}
+.fbrand .word{color:#fff}
+.fbrand .word i{color:#b9a8ff}
+.fbrand .word small{color:#6d7c96}
+.fbrand .crest{background:#16203a}
+.fbrand p{color:#8494ad;font-size:14.2px;max-width:36ch;margin:16px 0 0}
+.fcol h4{margin:0 0 16px;font:600 10px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:#4fe3d2}
+.fcol a{display:block;padding:6.5px 0;font-size:14.2px;color:#aab8ce;transition:color .3s,transform .35s var(--e)}
+.fcol a:hover{color:#fff;transform:translateX(4px)}
+.fbot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:20px 0 28px;border-top:1px solid #1b2740;font:500 12.6px var(--mono);color:#6d7c96}
+.fbot .right{margin-left:auto;display:flex;gap:8px;align-items:center}
+.hostchip{font:600 11px var(--mono);letter-spacing:.1em;color:#4fe3d2;border:1px solid #1d3a44;padding:5px 10px;border-radius:6px;background:rgba(0,169,155,.09)}
+
+/* ============ REVEALS ============ */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .95s var(--e),transform .95s var(--e)}
+.rv.in{opacity:1;transform:none}
+.rvL{opacity:0;transform:translateX(-34px);transition:opacity 1.05s var(--e),transform 1.05s var(--e)}
+.rvL.in{opacity:1;transform:none}
+.rvC{clip-path:inset(0 0 100% 0);transition:clip-path 1.25s var(--e)}
+.rvC.in{clip-path:inset(0 0 0 0)}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1120px){
+  #rail{display:none}
+  .hero .split{grid-template-columns:1fr;gap:52px}
+  .stage{max-width:560px}
+  .slab{grid-template-columns:1fr 1fr}
+  .mtr:nth-child(2){border-right:0}
+  .mtr:nth-child(1),.mtr:nth-child(2){border-bottom:1px solid var(--hair)}
+  .bx,.bx.w3{grid-column:span 3}
+  .bx.w6{grid-column:span 6;grid-template-columns:1fr}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .flow{grid-template-columns:1fr;gap:32px}
+  .flowShot{position:relative;top:0;height:300px;order:-1}
+  .fgrid{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media (max-width:900px){
+  nav.main{display:none}
+  .burger{display:block}
+  .drawer{display:block;max-height:0;overflow:hidden;transition:max-height .5s var(--e);background:#fff;border-bottom:1px solid var(--hair)}
+  .drawer .inner{padding:10px 26px 24px;display:flex;flex-direction:column;gap:2px}
+  .drawer a{padding:13px 0;border-bottom:1px solid var(--hair);font-size:15.2px;color:var(--ink2)}
+  .drawer .btn{margin-top:14px}
+  .sec{padding:74px 0}
+  .strip .go{display:none}
+  .bx,.bx.w3,.bx.w6{grid-column:span 6}
+  .deck{height:auto!important}
+  .deckStage{position:static;height:auto;display:block;padding:0 0 8px}
+  .deckHead{padding:0 18px 18px;flex-direction:column;align-items:flex-start;gap:12px}
+  .deckHead .ro{margin-left:0;text-align:left}
+  .deckBody{grid-template-columns:1fr;margin:0 18px;gap:18px}
+  .vp{min-height:0}
+  .plate{position:relative;inset:auto;opacity:1;transform:none;pointer-events:auto;border-bottom:1px solid var(--hair)}
+  .plate:last-child{border-bottom:0}
+  .plate.on .tr i,.plate .tr i{width:var(--w,0%)}
+  .deckBar{display:none}
+}
+@media (max-width:620px){
+  .wrap{padding:0 18px}
+  .bar{padding:14px 18px;gap:12px}
+  .slab{grid-template-columns:1fr}
+  .mtr{border-right:0;border-bottom:1px solid var(--hair)}
+  .grid4{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr;padding:46px 0 26px}
+  .cta .inner{padding:52px 20px}
+  .acts .btn{width:100%}
+  .disc{padding:30px 24px}
+  .cap-f{display:none}
+  .seal{width:76px;height:76px;right:-8px;top:-10px}
+  .strip .wrap{align-items:flex-start;font-size:11.8px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv,.rvL{opacity:1;transform:none}
+  .rvC{clip-path:none}
+  h1 .w>i{transform:none}
+  .ln{transform:scaleX(1)}
+  .chipset b{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body id="top">
+<div class="field"></div><div class="mesh"></div><div class="prism"></div><div class="grain"></div>
+<div id="beam"></div>
+
+<nav id="rail" aria-label="Section navigation">
+  <a href="#top">01 <i></i></a>
+  <a href="#gateway">02 <i></i></a>
+  <a href="#standards">03 <i></i></a>
+  <a href="#advantage">04 <i></i></a>
+  <a href="#process">05 <i></i></a>
+  <a href="#formats">06 <i></i></a>
+  <a href="#faq">07 <i></i></a>
+</nav>
+
+<!-- GATEWAY STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <span class="tag">Official Gateway</span>
+    <span>Secondary domain <b data-host>resumenest.com.tr</b> &mdash; builder, templates and rendering run on <b>www.resumenest.com</b></span>
+    <a class="go" href="https://www.resumenest.com/">Open main platform &rarr;</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="bar">
+    <a class="logo" href="https://www.resumenest.com/" aria-label="ResumeNest main platform">
+      <span class="crest">R</span>
+      <span class="word">Resume<i>Nest</i><small>Executive T&uuml;rkiye</small></span>
+    </a>
+    <nav class="main">
+      <a class="nl" href="https://www.resumenest.com/templates.html">Templates</a>
+      <a class="nl" href="https://www.resumenest.com/template-guides.html">Guides</a>
+      <a class="nl" href="https://www.resumenest.com/#how-it-works">Process</a>
+      <a class="nl" href="https://www.resumenest.com/blog/">Blog</a>
+      <a class="nl" href="https://www.resumenest.com/contact.html">Contact</a>
+      <a class="btn vio sm" href="https://www.resumenest.com/builder/">Start Building <svg class="ar" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+  <div class="drawer" id="drawer">
+    <div class="inner">
+      <a href="https://www.resumenest.com/templates.html">Templates</a>
+      <a href="https://www.resumenest.com/template-guides.html">Template Guides</a>
+      <a href="https://www.resumenest.com/#how-it-works">How It Works</a>
+      <a href="https://www.resumenest.com/blog/">Blog</a>
+      <a href="https://www.resumenest.com/contact.html">Contact</a>
+      <a class="btn vio" href="https://www.resumenest.com/builder/">Start Building</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap split" id="heroInner">
+    <div>
+      <span class="eyebrow rv"><span class="dot"></span> Executive &amp; Prestige Career Portal</span>
+      <h1 id="h1">
+        <span class="w"><i>The</i></span> <span class="w"><i>r&eacute;sum&eacute;</i></span> <span class="w"><i>standard</i></span>
+        <span class="w"><i>for</i></span> <span class="w gd"><i>board</i></span> <span class="w gd"><i>rooms</i></span>
+        <span class="w"><i>and</i></span> <span class="w"><i>senior</i></span> <span class="w"><i>leadership.</i></span>
+      </h1>
+      <div class="rule rv" data-d="120"></div>
+      <p class="lede rv" data-d="170">The regional gateway of ResumeNest for directors, C-suite candidates and corporate professionals. Structured for applicant tracking systems, typeset like an annual report, and built entirely inside your browser &mdash; on the central platform at <strong>www.resumenest.com</strong>.</p>
+      <div class="acts rv" data-d="230">
+        <a class="btn vio mag" href="https://www.resumenest.com/builder/">Launch CV Builder <svg class="ar" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        <a class="btn out mag" href="https://www.resumenest.com/templates.html">Explore Templates</a>
+      </div>
+      <div class="trust rv" data-d="290">
+        <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> 1,689+ ATS templates</b>
+        <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> No account required</b>
+        <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> Data stays in your browser</b>
+      </div>
+    </div>
+
+    <div class="stage rv" data-d="150">
+      <div class="holo" id="holo">
+        <div class="seal"><span>ATS<br>Verified<br>Layout</span></div>
+        <div class="hbar"><p>Executive dossier &middot; preview</p><span class="lamps"><i></i><i></i><i></i></span></div>
+        <div class="sheet">
+          <h4>A. Y&#305;lmaz</h4>
+          <div class="role">Chief Operating Officer &middot; Istanbul</div>
+          <div class="ln t w9"></div><div class="ln w7"></div><div class="ln w8"></div>
+          <hr>
+          <div class="cols">
+            <div>
+              <div class="mini">Leadership impact</div>
+              <div class="ln w9"></div><div class="ln v w7"></div><div class="ln w5"></div>
+            </div>
+            <div>
+              <div class="mini">Core competencies</div>
+              <div class="chipset"><b>P&amp;L Ownership</b><b>M&amp;A</b><b>Governance</b><b>Scale-Up</b><b>Board Reporting</b></div>
+            </div>
+          </div>
+          <hr>
+          <div class="ln w8"></div><div class="ln w5"></div>
+        </div>
+        <div class="cap-f c1"><b>0 ms</b> live preview</div>
+        <div class="cap-f c2"><b>PDF</b> vector export ready</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="tape">
+    <span>Executive summary</span><em>/</em><b>Board profile</b><em>/</em><span>P&amp;L impact</span><em>/</em><b>ATS parsed</b><em>/</em><span>Vector PDF</span><em>/</em><b>Bilingual layouts</b><em>/</em><span>Cover letter pair</span><em>/</em><b>Local privacy</b><em>/</em>
+    <span>Executive summary</span><em>/</em><b>Board profile</b><em>/</em><span>P&amp;L impact</span><em>/</em><b>ATS parsed</b><em>/</em><span>Vector PDF</span><em>/</em><b>Bilingual layouts</b><em>/</em><span>Cover letter pair</span><em>/</em><b>Local privacy</b><em>/</em>
+  </div>
+</div>
+
+<!-- METRIC SLAB -->
+<section class="sec" style="padding:78px 0 0">
+  <div class="wrap">
+    <div class="slab rv">
+      <div class="mtr"><div class="ix">M / 01</div><b data-count="1689" data-suffix="+">0</b><span>ATS templates</span></div>
+      <div class="mtr"><div class="ix">M / 02</div><b data-count="0" data-plain="Zero">0</b><span>Logins required</span></div>
+      <div class="mtr"><div class="ix">M / 03</div><b data-count="100" data-suffix="%">0</b><span>Browser-local</span></div>
+      <div class="mtr"><div class="ix">M / 04</div><b data-count="1" data-suffix="-click">0</b><span>Vector PDF export</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLOSURE -->
+<section class="sec" id="gateway" style="padding:86px 0">
+  <div class="wrap">
+    <div class="disc rv">
+      <span class="kick">Official Service Gateway Disclosure</span>
+      <h3>This domain is a gateway. The platform lives at resumenest.com.</h3>
+      <p class="quote">&ldquo;You are currently accessing our official secondary gateway domain (<b data-host>resumenest.com.tr</b>). Please note that ResumeNest provides all resume building tools, ATS templates, document rendering, and user services exclusively on our central platform at <a class="link" href="https://www.resumenest.com/">https://www.resumenest.com</a>.&rdquo;</p>
+      <p>Every button, menu item and footer link on this page opens the central platform directly. Nothing is processed, stored or rendered on this address.</p>
+      <a class="btn onink mag" href="https://www.resumenest.com/">Open www.resumenest.com <svg class="ar" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY STANDARDS DECK -->
+<section class="deck" id="deck">
+  <div class="deckStage">
+    <div class="deckHead" id="standards">
+      <div>
+        <span class="kick">Executive standards &middot; scroll to advance</span>
+        <h2>Four disciplines behind a <em>senior appointment</em>.</h2>
+      </div>
+      <div class="ro">Plate<b id="plateNo">01 / 04</b></div>
+    </div>
+    <div class="deckBody">
+      <ol class="stepper" id="stepper">
+        <li><span class="n">01</span><div><h4>Boardroom legibility</h4><p>Hierarchy &middot; whitespace</p></div></li>
+        <li><span class="n">02</span><div><h4>Quantified impact</h4><p>Figures &middot; scope</p></div></li>
+        <li><span class="n">03</span><div><h4>Regional to global</h4><p>Bilingual &middot; A4 &amp; Letter</p></div></li>
+        <li><span class="n">04</span><div><h4>Machine-readable spine</h4><p>Text layer &middot; parse</p></div></li>
+      </ol>
+      <div class="vp" id="plates">
+        <article class="plate on">
+          <span class="pi">Plate 01 &middot; Legibility</span>
+          <h3>A senior reader scans in a diagonal.</h3>
+          <p>Typographic contrast, generous whitespace and a fixed impact zone at the top of page one, so the decisive sentence lands before anyone scrolls.</p>
+          <div class="vis">
+            <div class="vrow"><span>Impact line</span><span class="tr"><i style="--w:92%"></i></span><em>92</em></div>
+            <div class="vrow"><span>Whitespace</span><span class="tr"><i style="--w:78%"></i></span><em>78</em></div>
+            <div class="vrow"><span>Heading scale</span><span class="tr"><i style="--w:86%"></i></span><em>86</em></div>
+          </div>
+          <div class="tags"><b>Typographic scale</b><b>Whitespace</b><b>Impact first</b></div>
+        </article>
+        <article class="plate">
+          <span class="pi">Plate 02 &middot; Evidence</span>
+          <h3>Numbers are what survive the screening call.</h3>
+          <p>Every executive layout reserves space for figures: margin recovered, revenue scaled, headcount led. Claims without magnitude are edited out, not decorated.</p>
+          <div class="vis">
+            <div class="vstats">
+              <div><b>P&amp;L</b><span>Ownership stated</span></div>
+              <div><b>Scope</b><span>Headcount &amp; region</span></div>
+              <div><b>Delta</b><span>Before &rarr; after</span></div>
+            </div>
+            <div class="vrow"><span>Metric density</span><span class="tr"><i style="--w:88%"></i></span><em>88</em></div>
+          </div>
+          <div class="tags"><b>P&amp;L framing</b><b>Metrics</b><b>Scope</b></div>
+        </article>
+        <article class="plate">
+          <span class="pi">Plate 03 &middot; Reach</span>
+          <h3>One narrative, two languages, no redesign.</h3>
+          <p>Parallel-language formats let a single career story travel from a local holding group to an international search firm, on A4 or Letter, without breaking the grid.</p>
+          <div class="vis">
+            <div class="vdual">
+              <div><div class="lb">T&uuml;rk&ccedil;e</div><div class="blk t" style="width:88%"></div><div class="blk" style="width:72%"></div><div class="blk" style="width:80%"></div></div>
+              <div><div class="lb">English</div><div class="blk v" style="width:92%"></div><div class="blk" style="width:76%"></div><div class="blk" style="width:84%"></div></div>
+            </div>
+          </div>
+          <div class="tags"><b>Bilingual</b><b>A4 &amp; Letter</b><b>Search-firm ready</b></div>
+        </article>
+        <article class="plate">
+          <span class="pi">Plate 04 &middot; Parseability</span>
+          <h3>Refinement sitting on a readable structure.</h3>
+          <p>Real text layers, one main column, logical heading order and no content buried inside images &mdash; so tracking software indexes the document exactly as a recruiter reads it.</p>
+          <div class="vis vspine">
+            <div class="sn"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></i> Genuine text layer</div>
+            <div class="sn"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></i> Standard section headings</div>
+            <div class="sn"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></i> MM / YYYY dates</div>
+            <div class="sn"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></i> Plain-text competencies</div>
+          </div>
+          <div class="tags"><b>Text layers</b><b>Heading order</b><b>Clean parse</b></div>
+        </article>
+      </div>
+    </div>
+    <div class="deckBar"><i id="deckBar"></i></div>
+  </div>
+</section>
+
+<!-- BENTO ADVANTAGE -->
+<section class="sec" id="advantage" style="padding-top:22px">
+  <div class="wrap">
+    <div class="head">
+      <span class="kick rv">The ResumeNest advantage</span>
+      <h2 class="rv" data-d="70">Six standards that survive the first <em>thirty seconds</em>.</h2>
+      <p class="sub rv" data-d="120">Senior pipelines filter with software before a human reads a line. Each capability below is engineered for that reality.</p>
+    </div>
+    <div class="bento">
+      <article class="bx w3 rv">
+        <div class="top"><span class="ixn">CAP / 01</span><span class="st">Library</span></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>1,689+ ATS templates</h3>
+        <p>Clean single-column logic, genuine text layers and a predictable heading hierarchy &mdash; readable by tracking software and by the recruiter who opens the file next.</p>
+        <div class="rl"><span>Columns <b>single spine</b></span><span>Text layer <b>real</b></span><span>Headings <b>standard</b></span></div>
+      </article>
+      <article class="bx w3 rv" data-d="80">
+        <div class="top"><span class="ixn">CAP / 02</span><span class="st">Access</span></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+        <h3>Zero sign-up friction</h3>
+        <p>No membership, no registration, no email and no password. Open the builder and the first field is already waiting for the cursor.</p>
+        <div class="rl"><span>Account <b>none</b></span><span>Verification <b>none</b></span><span>Time to first line <b>seconds</b></span></div>
+      </article>
+      <article class="bx rv">
+        <div class="top"><span class="ixn">CAP / 03</span><span class="st">Privacy</span></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.4"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></svg></div>
+        <h3>100% local browser privacy</h3>
+        <p>Confidential career history never touches a server. Every entry is written to your own browser local storage and stays on your device.</p>
+        <div class="rl"><span>Upload <b>none</b></span><span>Storage <b>local</b></span></div>
+      </article>
+      <article class="bx rv" data-d="80">
+        <div class="top"><span class="ixn">CAP / 04</span><span class="st">Export</span></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M5 19h14"/></svg></div>
+        <h3>Instant vector PDF export</h3>
+        <p>One click produces a razor-sharp, print-ready vector PDF &mdash; correct at A4, correct on screen, correct as an email attachment.</p>
+        <div class="rl"><span>Output <b>vector</b></span><span>Text <b>selectable</b></span></div>
+      </article>
+      <article class="bx rv" data-d="160">
+        <div class="top"><span class="ixn">CAP / 05</span><span class="st">Editing</span></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h10"/><path d="M4 12h7"/><path d="M4 19h9"/><path d="m15 14 5 5-2.5.7L17 22l-2-8z"/></svg></div>
+        <h3>Real-time live editing</h3>
+        <p>Typeface, margin, line spacing and accent colour update on the same frame you change them. No re-render, no queue, no waiting.</p>
+        <div class="rl"><span>Latency <b>0 ms</b></span><span>Preview <b>final document</b></span></div>
+      </article>
+      <article class="bx w6 rv" data-d="60">
+        <div>
+          <div class="top"><span class="ixn">CAP / 06</span><span class="st">Document set</span></div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h5"/></svg></div>
+          <h3>Free cover letter companion</h3>
+          <p>Matching cover letter layouts inherit the r&eacute;sum&eacute; type system and accent, so a search consultant receives one coherent set instead of two unrelated documents. Included at no cost, exported the same way.</p>
+          <div class="rl"><span>Pairing <b>automatic</b></span><span>Typography <b>inherited</b></span><span>Cost <b>free</b></span></div>
+        </div>
+        <div class="pair"><i></i><i></i></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS TIMELINE -->
+<section class="sec" id="process" style="padding-top:22px">
+  <div class="wrap">
+    <div class="head">
+      <span class="kick rv">The executive standard</span>
+      <h2 class="rv" data-d="70">Three moves from blank page to <em>boardroom-ready</em> file.</h2>
+    </div>
+    <div class="flow">
+      <div class="tl" id="tl">
+        <svg class="tlsvg" viewBox="0 0 4 600" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#00a99b"/><stop offset="1" stop-color="#6b4bf5"/>
+          </linearGradient></defs>
+          <path id="tpath" d="M2 0 V600" fill="none" stroke="url(#tg)" stroke-width="3"/>
+        </svg>
+        <article class="node rvL">
+          <span class="rn">I</span>
+          <h3>Select the format</h3>
+          <p>Choose an executive layout calibrated for seniority, region and industry expectation. Every format already carries the machine-readable spine.</p>
+          <div class="mt">Step 01 &middot; calibrate</div>
+        </article>
+        <article class="node rvL" data-d="90">
+          <span class="rn">II</span>
+          <h3>Compose live</h3>
+          <p>Write with instant preview. Adjust hierarchy, density and accent until the page reads decisively at a glance &mdash; and still parses cleanly underneath.</p>
+          <div class="mt">Step 02 &middot; 0 ms preview</div>
+        </article>
+        <article class="node rvL" data-d="180">
+          <span class="rn">III</span>
+          <h3>Export and send</h3>
+          <p>Download a vector PDF and attach it anywhere &mdash; application portal, direct email or executive search consultant. Duplicate and retarget per role.</p>
+          <div class="mt">Step 03 &middot; vector output</div>
+        </article>
+        <div class="acts rv" data-d="220" style="margin:6px 0 0">
+          <a class="btn out mag" href="https://www.resumenest.com/#how-it-works">See the full process</a>
+        </div>
+      </div>
+      <div class="flowShot shot rvC">
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="" loading="lazy" decoding="async" onerror="this.classList.add('dead')" data-par="0.1">
+        <div class="cap"><span class="kick" style="color:#7ff0e2">Built in the browser &middot; nothing uploaded</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAT SPEC CARDS -->
+<section class="sec" id="formats" style="padding-top:22px">
+  <div class="wrap">
+    <div class="head">
+      <span class="kick rv">Featured formats</span>
+      <h2 class="rv" data-d="70">Layouts built for <em>senior scrutiny</em>.</h2>
+      <p class="sub rv" data-d="120">A small selection from the library. Every format opens directly in the builder on the central platform.</p>
+    </div>
+    <div class="grid4">
+      <article class="fmt rv">
+        <div class="paper">
+          <div class="scan"></div>
+          <div class="bh"></div><div class="bs"></div>
+          <div class="col">
+            <div><div class="l" style="width:90%"></div><div class="l" style="width:70%"></div><div class="l" style="width:80%"></div></div>
+            <div><div class="l" style="width:100%"></div><div class="l" style="width:92%"></div><div class="l" style="width:96%"></div><div class="l" style="width:74%"></div><div class="l" style="width:88%"></div></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div><b>Columns</b><span>1</span></div>
+          <div><b>Dates</b><span>MM/YYYY</span></div>
+          <div><b>Parse</b><span>96</span></div>
+        </div>
+        <div class="fb">
+          <span class="pill">Chronological</span>
+          <h3>Executive Chronological</h3>
+          <p>Clear career progression with a leading impact summary.</p>
+          <a class="btn ink sm" href="https://www.resumenest.com/builder/">Use Template</a>
+        </div>
+      </article>
+      <article class="fmt rv" data-d="70">
+        <div class="paper">
+          <div class="scan"></div><div class="sb"></div>
+          <div style="padding-left:14px">
+            <div class="bh" style="width:50%"></div><div class="bs" style="width:30%"></div>
+            <div class="l" style="width:96%;margin-top:16px"></div><div class="l" style="width:82%"></div><div class="l" style="width:90%"></div><div class="l" style="width:64%"></div><div class="l" style="width:88%"></div><div class="l" style="width:76%"></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div><b>Pages</b><span>1</span></div>
+          <div><b>Accent</b><span>Spine</span></div>
+          <div><b>Parse</b><span>95</span></div>
+        </div>
+        <div class="fb">
+          <span class="pill">C-Suite</span>
+          <h3>Board &amp; C-Suite Brief</h3>
+          <p>One-page authority format for board and director applications.</p>
+          <a class="btn ink sm" href="https://www.resumenest.com/builder/">Use Template</a>
+        </div>
+      </article>
+      <article class="fmt rv" data-d="140">
+        <div class="paper">
+          <div class="scan"></div>
+          <div class="bh" style="width:44%"></div><div class="bs" style="width:28%"></div>
+          <div class="l" style="width:100%;margin-top:16px"></div><div class="l" style="width:94%"></div><div class="l" style="width:98%"></div><div class="l" style="width:72%"></div><div class="l" style="width:90%"></div><div class="l" style="width:84%"></div><div class="l" style="width:66%"></div>
+        </div>
+        <div class="spec">
+          <div><b>Columns</b><span>1</span></div>
+          <div><b>Skills</b><span>Plain</span></div>
+          <div><b>Parse</b><span>98</span></div>
+        </div>
+        <div class="fb">
+          <span class="pill">Corporate</span>
+          <h3>Corporate ATS Standard</h3>
+          <p>The safest structure for large-enterprise screening software.</p>
+          <a class="btn ink sm" href="https://www.resumenest.com/builder/">Use Template</a>
+        </div>
+      </article>
+      <article class="fmt rv" data-d="210">
+        <div class="paper">
+          <div class="scan"></div>
+          <div class="bh" style="width:62%"></div><div class="bs" style="width:40%"></div>
+          <div class="col" style="grid-template-columns:1fr 1fr">
+            <div><div class="l" style="width:92%"></div><div class="l" style="width:78%"></div><div class="l" style="width:86%"></div></div>
+            <div><div class="l" style="width:88%"></div><div class="l" style="width:70%"></div><div class="l" style="width:94%"></div></div>
+          </div>
+        </div>
+        <div class="spec">
+          <div><b>Langs</b><span>TR / EN</span></div>
+          <div><b>Sizes</b><span>A4 &amp; LTR</span></div>
+          <div><b>Parse</b><span>94</span></div>
+        </div>
+        <div class="fb">
+          <span class="pill">Bilingual</span>
+          <h3>Bilingual Regional Profile</h3>
+          <p>Parallel-language layout for local and international submissions.</p>
+          <a class="btn ink sm" href="https://www.resumenest.com/builder/">Use Template</a>
+        </div>
+      </article>
+    </div>
+    <div class="acts rv" style="justify-content:center;margin-top:44px">
+      <a class="btn out mag" href="https://www.resumenest.com/templates.html">Browse all 1,689+ templates</a>
+      <a class="btn out mag" href="https://www.resumenest.com/template-guides.html">Read the template guides</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ LEDGER -->
+<section class="sec" id="faq" style="padding-top:22px">
+  <div class="wrap" style="max-width:920px">
+    <div class="head">
+      <span class="kick rv">Questions</span>
+      <h2 class="rv" data-d="70">Clarity before you <em>click through</em>.</h2>
+    </div>
+    <div class="led rv" data-d="120" id="faqs">
+      <div class="qrow"><button class="qh" aria-expanded="false"><span class="n">Q1</span> Is this website the ResumeNest application itself?<span class="pm"></span></button><div class="ans"><p>No. This address is an official secondary gateway domain. It presents the platform and routes you to it. The builder, the template library, document rendering and all user services run exclusively on <a href="https://www.resumenest.com/" style="color:var(--violet)">www.resumenest.com</a>.</p></div></div>
+      <div class="qrow"><button class="qh" aria-expanded="false"><span class="n">Q2</span> Do I need an account to build a r&eacute;sum&eacute;?<span class="pm"></span></button><div class="ans"><p>No. There is no registration, no email verification and no password. Open the builder and start writing immediately.</p></div></div>
+      <div class="qrow"><button class="qh" aria-expanded="false"><span class="n">Q3</span> Where is my personal data stored?<span class="pm"></span></button><div class="ans"><p>Inside your own browser. Entries are held in local storage on your device, so your career history is not uploaded to a server. Clearing browser data clears the draft &mdash; export a PDF once the document is final.</p></div></div>
+      <div class="qrow"><button class="qh" aria-expanded="false"><span class="n">Q4</span> Will an executive layout still pass automated screening?<span class="pm"></span></button><div class="ans"><p>Yes. The prestige formats keep a machine-readable spine: genuine text layers, logical heading order and no content trapped inside images. The visual refinement sits on top of that structure rather than replacing it.</p></div></div>
+      <div class="qrow"><button class="qh" aria-expanded="false"><span class="n">Q5</span> Is the PDF export free and unlimited?<span class="pm"></span></button><div class="ans"><p>Yes. Export a high-resolution vector PDF as many times as you need, and pair it with a matching cover letter at no cost.</p></div></div>
+      <div class="qrow"><button class="qh" aria-expanded="false"><span class="n">Q6</span> Can I tailor one r&eacute;sum&eacute; for several roles?<span class="pm"></span></button><div class="ans"><p>Yes. Duplicate your draft, adjust the summary and competency wording for each posting, then export a separate PDF per application.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec" style="padding-top:22px">
+  <div class="wrap">
+    <div class="cta rvC">
+      <div class="shot"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="" loading="lazy" decoding="async" onerror="this.classList.add('dead')" data-par="0.12"></div>
+      <div class="aur"></div>
+      <div class="inner">
+        <span class="kick">Your next appointment starts with the document</span>
+        <h2>Create your r&eacute;sum&eacute; now.</h2>
+        <p>Open the builder on the central platform, choose an executive format and export a vector PDF in minutes. No account, no upload, no cost.</p>
+        <div class="acts">
+          <a class="btn vio mag" href="https://www.resumenest.com/builder/">Create Your Resume Now <svg class="ar" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+          <a class="btn onink mag" href="https://www.resumenest.com/templates.html">Explore Templates</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <a class="logo" href="https://www.resumenest.com/"><span class="crest">R</span><span class="word">Resume<i>Nest</i><small>Executive T&uuml;rkiye</small></span></a>
+        <p>Official secondary gateway domain. All resume building tools, ATS templates and document rendering are provided on the central platform at www.resumenest.com.</p>
+      </div>
+      <div class="fcol">
+        <h4>Platform</h4>
+        <a href="https://www.resumenest.com/">Main Platform</a>
+        <a href="https://www.resumenest.com/builder/">Resume Builder App</a>
+        <a href="https://www.resumenest.com/templates.html">Resume Templates</a>
+      </div>
+      <div class="fcol">
+        <h4>Resources</h4>
+        <a href="https://www.resumenest.com/template-guides.html">Template Guides</a>
+        <a href="https://www.resumenest.com/blog/">Career Blog</a>
+        <a href="https://www.resumenest.com/about.html">About ResumeNest</a>
+      </div>
+      <div class="fcol">
+        <h4>Support &amp; Legal</h4>
+        <a href="https://www.resumenest.com/contact.html">Contact Support</a>
+        <a href="https://www.resumenest.com/privacy.html">Privacy Policy</a>
+        <a href="https://www.resumenest.com/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; <span data-year>2026</span> ResumeNest. All rights reserved.</span>
+      <span class="right">gateway: <span class="hostchip" data-host>resumenest.com.tr</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var doc=document, root=doc.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- host + year injection ---- */
+  var host=(location.hostname||'').replace(/^www\./,'');
+  if(host){[].forEach.call(doc.querySelectorAll('[data-host]'),function(n){n.textContent=host;});}
+  [].forEach.call(doc.querySelectorAll('[data-year]'),function(n){n.textContent=new Date().getFullYear();});
+
+  /* ---- mobile drawer ---- */
+  var burger=doc.getElementById('burger'), drawer=doc.getElementById('drawer'), dOpen=false;
+  if(burger&&drawer){
+    burger.addEventListener('click',function(){
+      dOpen=!dOpen;
+      drawer.style.maxHeight=dOpen?drawer.scrollHeight+'px':'0px';
+      burger.setAttribute('aria-expanded',dOpen?'true':'false');
+    });
+    [].forEach.call(drawer.querySelectorAll('a'),function(a){
+      a.addEventListener('click',function(){dOpen=false;drawer.style.maxHeight='0px';burger.setAttribute('aria-expanded','false');});
+    });
+  }
+
+  /* ---- reveals ---- */
+  var revealables=[].slice.call(doc.querySelectorAll('.rv,.rvL,.rvC'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var d=parseInt(e.target.getAttribute('data-d')||'0',10);
+        setTimeout(function(){e.target.classList.add('in');},reduce?0:d);
+        io.unobserve(e.target);
+      });
+    },{threshold:.16,rootMargin:'0px 0px -8% 0px'});
+    revealables.forEach(function(n){io.observe(n);});
+  } else { revealables.forEach(function(n){n.classList.add('in');}); }
+
+  /* ---- headline + dossier ---- */
+  var h1=doc.getElementById('h1'), holo=doc.getElementById('holo');
+  setTimeout(function(){ if(h1) h1.classList.add('in'); },180);
+  if(holo){
+    if('IntersectionObserver' in window){
+      var ho=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ holo.classList.add('lit'); ho.unobserve(holo); } });
+      },{threshold:.3});
+      ho.observe(holo);
+    } else holo.classList.add('lit');
+  }
+
+  /* ---- metric count-ups ---- */
+  function countUp(el){
+    var plain=el.getAttribute('data-plain');
+    if(plain){ el.textContent=plain; return; }
+    var target=parseFloat(el.getAttribute('data-count')||'0');
+    var suffix=el.getAttribute('data-suffix')||'';
+    if(reduce){ el.textContent=target.toLocaleString('en-US')+suffix; return; }
+    var t0=null, dur=1500;
+    function tick(ts){
+      if(!t0) t0=ts;
+      var p=Math.min((ts-t0)/dur,1), eased=1-Math.pow(1-p,3);
+      el.textContent=Math.round(target*eased).toLocaleString('en-US')+suffix;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var mtrs=[].slice.call(doc.querySelectorAll('.mtr'));
+  if('IntersectionObserver' in window){
+    var mo=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        e.target.classList.add('in');
+        var b=e.target.querySelector('b[data-count]');
+        if(b){ countUp(b); }
+        mo.unobserve(e.target);
+      });
+    },{threshold:.4});
+    mtrs.forEach(function(n){mo.observe(n);});
+  } else {
+    mtrs.forEach(function(n){ n.classList.add('in'); var b=n.querySelector('b[data-count]'); if(b) countUp(b); });
+  }
+
+  /* ---- FAQ ledger ---- */
+  [].forEach.call(doc.querySelectorAll('#faqs .qh'),function(btn){
+    btn.addEventListener('click',function(){
+      var row=btn.parentNode, ans=row.querySelector('.ans'), wasOpen=row.classList.contains('open');
+      [].forEach.call(doc.querySelectorAll('#faqs .qrow.open'),function(r){
+        r.classList.remove('open');
+        r.querySelector('.ans').style.maxHeight='0px';
+        r.querySelector('.qh').setAttribute('aria-expanded','false');
+      });
+      if(!wasOpen){
+        row.classList.add('open');
+        ans.style.maxHeight=ans.scrollHeight+'px';
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  /* ---- pointer effects ---- */
+  if(!reduce){
+    [].forEach.call(doc.querySelectorAll('.mag'),function(el){
+      el.addEventListener('mousemove',function(ev){
+        var r=el.getBoundingClientRect();
+        var x=(ev.clientX-r.left-r.width/2)/r.width, y=(ev.clientY-r.top-r.height/2)/r.height;
+        el.style.transform='translate('+(x*7).toFixed(2)+'px,'+(y*7-3).toFixed(2)+'px)';
+      });
+      el.addEventListener('mouseleave',function(){el.style.transform='';});
+    });
+    [].forEach.call(doc.querySelectorAll('.bx'),function(el){
+      el.addEventListener('mousemove',function(ev){
+        var r=el.getBoundingClientRect();
+        el.style.setProperty('--mx',((ev.clientX-r.left)/r.width*100).toFixed(1)+'%');
+        el.style.setProperty('--my',((ev.clientY-r.top)/r.height*100).toFixed(1)+'%');
+      });
+    });
+    var stage=doc.querySelector('.stage');
+    if(stage&&holo){
+      stage.addEventListener('mousemove',function(ev){
+        var r=stage.getBoundingClientRect();
+        var x=(ev.clientX-r.left)/r.width-.5, y=(ev.clientY-r.top)/r.height-.5;
+        holo.style.transform='rotateY('+(x*9).toFixed(2)+'deg) rotateX('+(-y*7).toFixed(2)+'deg)';
+      });
+      stage.addEventListener('mouseleave',function(){holo.style.transform='';});
+    }
+  }
+
+  /* ---- single rAF engine: beam, depth, velocity, parallax, timeline, deck scrub, rail ---- */
+  var beam=doc.getElementById('beam');
+  var deck=doc.getElementById('deck');
+  var plates=[].slice.call(doc.querySelectorAll('#plates .plate'));
+  var steps=[].slice.call(doc.querySelectorAll('#stepper li'));
+  var plateNo=doc.getElementById('plateNo'), deckBar=doc.getElementById('deckBar');
+  var railLinks=[].slice.call(doc.querySelectorAll('#rail a'));
+  var nodes=[].slice.call(doc.querySelectorAll('.node'));
+  var pars=[].slice.call(doc.querySelectorAll('[data-par]'));
+  var tl=doc.getElementById('tl'), tpath=doc.getElementById('tpath'), tlen=0;
+  if(tpath&&tpath.getTotalLength){
+    tlen=tpath.getTotalLength();
+    tpath.style.strokeDasharray=tlen;
+    tpath.style.strokeDashoffset=tlen;
+  }
+  var lastY=window.pageYOffset, cur=-1, ticking=false;
+
+  function frame(){
+    ticking=false;
+    var y=window.pageYOffset, vh=window.innerHeight;
+    var max=Math.max(doc.body.scrollHeight-vh,1);
+    var prog=Math.min(Math.max(y/max,0),1);
+
+    if(beam) beam.style.width=(prog*100).toFixed(2)+'%';
+    root.style.setProperty('--sy',prog.toFixed(4));
+    var hdr=doc.getElementById('hdr');
+    if(hdr) hdr.classList.toggle('tight', y>26);
+
+    if(!reduce){
+      var dv=Math.max(Math.min((y-lastY)*0.035,1.4),-1.4);
+      root.style.setProperty('--vel',dv.toFixed(3)+'deg');
+    }
+    lastY=y;
+
+    pars.forEach(function(img){
+      var box=img.parentNode.getBoundingClientRect();
+      if(box.bottom<-240||box.top>vh+240) return;
+      var f=parseFloat(img.getAttribute('data-par'))||.08;
+      var off=((box.top+box.height/2)-vh/2)*-f;
+      img.style.transform='translate3d(0,'+off.toFixed(1)+'px,0) scale(1.08)';
+    });
+
+    if(tl&&tpath&&tlen){
+      var tr=tl.getBoundingClientRect();
+      var p2=Math.min(Math.max((vh*0.72-tr.top)/Math.max(tr.height,1),0),1);
+      tpath.style.strokeDashoffset=(tlen*(1-p2)).toFixed(1);
+    }
+    nodes.forEach(function(n){
+      var r=n.getBoundingClientRect();
+      n.classList.toggle('on', r.top<vh*0.68 && r.bottom>vh*0.18);
+    });
+
+    if(deck&&plates.length&&window.innerWidth>900){
+      var dr=deck.getBoundingClientRect();
+      var span=Math.max(deck.offsetHeight-vh,1);
+      var dp=Math.min(Math.max(-dr.top/span,0),1);
+      var idx=Math.min(plates.length-1,Math.floor(dp*plates.length*0.999));
+      if(idx!==cur){
+        cur=idx;
+        plates.forEach(function(pl,i){pl.classList.toggle('on',i===idx);});
+        steps.forEach(function(st,i){st.classList.toggle('on',i===idx);st.classList.toggle('done',i<idx);});
+        if(plateNo) plateNo.textContent=('0'+(idx+1)).slice(-2)+' / 0'+plates.length;
+      }
+      if(deckBar) deckBar.style.width=(dp*100).toFixed(1)+'%';
+    }
+
+    railLinks.forEach(function(a){
+      var t=doc.getElementById(a.getAttribute('href').replace('#',''));
+      if(!t) return;
+      var r=t.getBoundingClientRect();
+      a.classList.toggle('on', r.top<vh*0.5 && r.bottom>vh*0.34);
+    });
+  }
+  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(frame); } }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  frame();
+})();
+</script>
+</body>
+</html>
